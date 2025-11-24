@@ -94,7 +94,9 @@ public class TokenStream {
 				if (nextChar == '=') {
 					t.setValue(t.getValue() + nextChar);
 					nextChar = readChar();
+					return t;
 				}
+				t.setType("Other");
 				return t;
 			case '!':
 				nextChar = readChar();
