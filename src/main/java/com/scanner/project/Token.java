@@ -12,6 +12,12 @@ public class Token {
 	 * @param value
 	 *            . Set the value of a Token.
 	 */
+
+	public Token() {
+		this.type = "";
+		this.value = "";
+	}
+	
 	public void setValue(String value) {
 		this.value = value;
 	}
